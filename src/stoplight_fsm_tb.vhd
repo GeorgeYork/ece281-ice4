@@ -138,7 +138,8 @@ begin
         wait for k_clk_period;
             assert w_stoplight = "001" report "should be green when car present" severity failure;
 	
-		wait;
+		--wait;
+		assert true = false report "ALL TESTS SUCESSFULE" severity failure;
 	end process;
 	----------------------------------------------------------------
 end;
